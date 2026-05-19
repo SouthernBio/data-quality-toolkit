@@ -22,9 +22,10 @@ docker compose up --build
 
 3. Abrir el navegador web en `http://localhost:8501`.
 
-Si deseas ejecutar la CLI vía Docker Compose:
+Para ejecutar la CLI vía Docker Compose:
+
 ```bash
-docker-compose run --rm toolkit-cli --file tests/sample.csv --format csv
+docker compose run --rm toolkit-cli --file tests/sample.csv --format csv
 ```
 
 ## Uso de la CLI
@@ -50,7 +51,7 @@ python main.py --file my_data.csv --format csv --report-format html --output-dir
 
 ### Especificar Reglas Personalizadas
 
-Al igual que en la interfaz web, puedes aplicar reglas de calidad estrictas en la CLI pasándolas mediante un archivo JSON. El motor evaluará rangos, tipos, formatos de fechas y la permisión de nulos.
+Al igual que en la interfaz web, se pueden aplicar reglas de calidad estrictas en la CLI pasándolas mediante un archivo JSON. El motor evaluará rangos, tipos, formatos de fechas y la permisión de nulos.
 
 **Ejemplo de `rules.json`**:
 ```json
@@ -78,6 +79,7 @@ Al igual que en la interfaz web, puedes aplicar reglas de calidad estrictas en l
 ```
 
 **Ejecución**:
+
 ```bash
 python main.py --file data.csv --rules rules.json
 ```
