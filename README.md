@@ -1,5 +1,7 @@
 # Data Quality Toolkit
 
+![Data Quality Toolkit](logo.png)
+
 Toolkit para automatizar el análisis de calidad de datos, perfilamiento y generación de recomendaciones.
 
 ## Características
