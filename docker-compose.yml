@@ -1,0 +1,16 @@
+services:
+  toolkit-cli:
+    build: .
+    image: data-quality-toolkit
+    volumes:
+      - .:/app
+    command: [ "python", "main.py", "--help" ]
+
+  toolkit-web:
+    build: .
+    image: data-quality-toolkit
+    volumes:
+      - .:/app
+    ports:
+      - "8501:8501"
+    entrypoint: [ "streamlit", "run", "app.py" ]

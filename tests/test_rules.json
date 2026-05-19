@@ -1,0 +1,15 @@
+[
+  {
+    "column": "age",
+    "type": "numeric",
+    "allow_nulls": false,
+    "min": 0,
+    "max": 100
+  },
+  {
+    "column": "gender",
+    "type": "categorical",
+    "allow_nulls": true,
+    "allowed_values": ["M", "F", "Other"]
+  }
+]
